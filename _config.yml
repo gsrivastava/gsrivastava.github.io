@@ -30,6 +30,13 @@ defaults:
     values:
       layout: "default"
 
+# Tipue Search Settings
+tipue_search:
+  include:
+    pages: true
+  exclude:
+    files: [search.html]
+
 exclude:
   - docker-compose.yml
   - makefile

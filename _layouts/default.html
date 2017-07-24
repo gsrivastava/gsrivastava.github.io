@@ -9,7 +9,10 @@
 		<title>Food on the 15th</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_path }}" />
+		<!-- Tipue Search -->
+		<link rel="stylesheet" href="{{ "/assets/tipuesearch/css/normalize.css" | relative_path }}">
+		<link rel="stylesheet" href="{{ "/assets/tipuesearch/css/tipuesearch.css" | relative_path }}">
 	</head>
 	<body>
 
@@ -23,6 +26,14 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+
+				<!-- Main -->
+				<section id="main" class="main">
+					<header>
+						<h2>Lorem ipsum dolor</h2>
+					</header>
+					{{ content }}
+				</section>
 
 				<!-- Banner -->
 					<section id="intro" class="main">
@@ -91,16 +102,6 @@
 						</ul>
 					</section>
 
-				<!-- Main -->
-				<!--
-					<section id="main" class="main">
-						<header>
-							<h2>Lorem ipsum dolor</h2>
-						</header>
-						<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</section>
-				-->
-
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
@@ -115,11 +116,20 @@
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Scripts -->
+			<script src="{{ "/assets/js/jquery.min.js" | relative_path }}"></script>
+			<script src="{{ "/assets/js/skel.min.js" | relative_path }}"></script>
+			<script src="{{ "/assets/js/util.js" | relative_path }}"></script>
+			<script src="{{ "/assets/js/main.js" | relative_path }}"></script>
+			<!-- Tipue Search -->
+			<script src="{{ "/assets/tipuesearch/tipuesearch_content.js" | relative_path }}"></script>
+			<script src="{{ "/assets/tipuesearch/tipuesearch_set.js" | relative_path }}"></script>
+			<script src="{{ "/assets/tipuesearch/tipuesearch.min.js" | relative_path }}"></script>
 
+			<script>
+				$(document).ready(function() {
+					$('#tipue_search_input').tipuesearch();
+				});
+			</script>
 	</body>
 </html>
