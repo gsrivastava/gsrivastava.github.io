@@ -1435,6 +1435,22 @@
 				}
 
 		}
+		
+		#header nav > ul > li {
+			display: inline-block;
+			margin-left: 3em;
+			padding-left: 0;
+		}
+
+		#header nav > ul > li a {
+			display: inline-block;
+			font-weight: 900;
+			letter-spacing: 0.05em;
+			text-decoration: none !important;
+			text-indent: -0.05em;
+			color: #fff !important;
+			text-transform: uppercase;
+		}
 
 /* Main */
 
