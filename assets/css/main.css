@@ -1355,6 +1355,13 @@
 			z-index: 1;
 		}
 
+		#header .inner-img-circle{
+			height: 400px; 
+			width: 400px; 
+			border-radius: 50%;
+			margin: auto;
+		}
+
 		#header.alt {
 			height: 20em;
 			min-height: 20em;
