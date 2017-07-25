@@ -1448,6 +1448,12 @@
 
 		}
 		
+		#header nav {
+			position: absolute;
+			top: 1.5em;
+			right: 2.5em;
+		}
+
 		#header nav > ul > li {
 			display: inline-block;
 			margin-left: 3em;
