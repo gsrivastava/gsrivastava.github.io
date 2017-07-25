@@ -1480,6 +1480,14 @@
 			}
 
 		}
+		
+		table tbody tr.row-element {
+			background-color: transparent;
+		}
+
+		table.table-body {
+			border-collapse: inherit;
+		}
 
 /* Intro */
 
