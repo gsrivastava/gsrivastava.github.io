@@ -327,6 +327,12 @@
 		border-color: #666666;
 	}
 
+	.clearfix::after {
+		display: block;
+		content: "";
+		clear: both
+	}
+
 /* Button */
 
 	input[type="submit"],
@@ -710,7 +716,6 @@
 		}
 
 		.icon.major {
-			display: block;
 			margin: 0 0 1.5em 0;
 		}
 
@@ -1587,3 +1592,13 @@
 				}
 
 		}
+
+/* Photo Stream */
+.photo-stream > span.icon {
+	float: left;
+	padding-right: 30px;
+}
+
+.photo-stream > p {
+	text-align: left;
+}
