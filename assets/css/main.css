@@ -1450,6 +1450,7 @@
 			text-indent: -0.05em;
 			color: #fff !important;
 			text-transform: uppercase;
+			border-bottom-color: transparent;
 		}
 
 /* Main */
