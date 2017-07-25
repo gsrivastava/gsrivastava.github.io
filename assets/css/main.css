@@ -1457,6 +1457,7 @@
 			text-indent: -0.05em;
 			color: #fff !important;
 			text-transform: uppercase;
+			border-bottom-color: transparent;
 		}
 
 /* Main */
@@ -1485,6 +1486,14 @@
 				padding: 2em 1em 0.1em 1em;
 			}
 
+		}
+		
+		table tbody tr.row-element {
+			background-color: transparent;
+		}
+
+		table.table-body {
+			border-collapse: inherit;
 		}
 
 /* Intro */
